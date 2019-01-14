@@ -1,0 +1,21 @@
+{
+  "name": "Trailer App",
+  "short_name": "Trailer",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e3e3e3",
+  "theme_color": "#e3e3e3"
+}

@@ -1,0 +1,33 @@
+#movie-list {
+
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: 'MTG Sans', Helvetica, Arial, sans-serif;
+    letter-spacing: 0rem;
+    outline: none;
+    -webkit-focus-ring-color: none;
+    border-radius: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 -20px 0 0;
+  }
+
+  li {
+    width: 14.28%;
+    max-height: 317px;
+    float: left;
+    padding: 15px 20px 0 0;
+    overflow: hidden;
+    line-height: 0;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+}
