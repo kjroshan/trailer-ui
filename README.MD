@@ -25,6 +25,7 @@ docker run --name trailerui -p 8080:8080 image-name/tag -- To create docker cont
 **http://localhost:8080/pc-se/film/the-vanishing-of-sidney-hall-2017**
 ```
 **NOTE**
+Make sure the endpoints given in /src/server/config.js before executing this repo. By default it will be pointing to the apiapp (container name for the film-trailer). i fyou want to run the application in localhost, change it to localhost.
 Make sure you have configured the film-trailer app before trying the UI.
 https://github.com/kjroshan/film-trailer
 ```
