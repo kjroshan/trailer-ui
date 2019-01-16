@@ -32,36 +32,13 @@ https://github.com/kjroshan/film-trailer
 
 ## Building docker containers for for API and UI Interface
 
-* Download or clone both the **film-trailer** (API) and **trailer-ui** (User Interface) repos into a local folder.
- * Create a file named **docker-composer-yml** inside the folder containing both the applications with the following code or copy the file from root folder of the film-trailer repo into the folder outside.
-```yaml
-version:  "3"
-services:
-  ui-app:
-    image:  name/tag
-    container_name:  ui-app
-    restart:  always
-    environment:
-      - REDIS_ENV=false
-      - NODE_TLS_REJECT_UNAUTHORIZED=0
-    ports:
-      - 8080:8080
-  api-app:
-    image:  name/tag
-    container_name:  api-app
-    restart:  always
-    environment:
-      - NODE_TLS_REJECT_UNAUTHORIZED=0
-    ports:
-      - 3000:3000
+* Copy the file named **docker-composer-yml** from **root folder of the film-trailer** repo to **the folder containing both the applications**.
+
 ```
-```
----
 **NOTE**
 Maintain the indentation as given in the yaml file
 Replace the name/tag using preffered name and tag.
 Ex for name/tag:  roshan/film-trailer:latest, roshan/trailer-ui:latest
----
 ```
 
 * Create a file named **_.sh** inside the folder containing both the applications with the following code or copy the file from root folder of the film-trailer repo into the folder outside.
