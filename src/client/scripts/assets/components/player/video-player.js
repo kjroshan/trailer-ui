@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 class VideoPlayer extends PureComponent {
     render() {
@@ -15,7 +14,7 @@ class VideoPlayer extends PureComponent {
         const embeddedURL = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`;
 
         return (
-            <div className="video-container">
+            <div className="video-player">
                 <iframe
                     title="youtube-player"
                     width="100%"
@@ -37,8 +36,4 @@ VideoPlayer.defaultProps = {
     youtubeVideoId: null
 };
 
-const mapStateToProps = state => ({
-    youtubeVideoId: state.appStore.youtubeVideoId
-});
-
-export default connect(mapStateToProps, { })(VideoPlayer);
+export default VideoPlayer;

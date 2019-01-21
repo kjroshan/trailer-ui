@@ -96,7 +96,7 @@ $.gulp.task('buildALL', (done) => {
         'lint:server',
         'lint:client',
         'format:server',
-        'format:client',        
+        'format:client',
         'clean',
         'test',
         'build:server',

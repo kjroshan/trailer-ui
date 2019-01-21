@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import MovieList from '../components/movie-list';
+import MovieList from '../components/dashboard/movie-list';
 import { fetchMovies } from '../../store/actions';
 
 class DashboardController extends PureComponent {

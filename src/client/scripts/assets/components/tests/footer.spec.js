@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
-import Footer from '../footer';
+import Footer from '../common/footer';
 
 
 configure({ adapter: new Adapter() });

@@ -1,2 +1,5 @@
 export const FETCH_MOVIES = 'FETCH_MOVIES';
 export const FETCH_TRAILER = 'FETCH_TRAILER';
+export const FETCH_TRAILERS = 'FETCH_TRAILERS';
+export const SET_TRAILER = 'SET_TRAILER';
+

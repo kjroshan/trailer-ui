@@ -1,5 +1,6 @@
 import express from 'express';
 import trailerIdRouter from './trailer-id-router';
+import apiProxyRouter from './trailer-proxy';
 
 export function createRoute({ routePath, controller }) {
     const router = express.Router();
@@ -9,4 +10,5 @@ export function createRoute({ routePath, controller }) {
 
 export default function registerRoutes(app, params) {
     app.use('/trailer-id', createRoute(trailerIdRouter(params)));
+    app.use('/trailer-proxy', createRoute(apiProxyRouter(params)));
 }

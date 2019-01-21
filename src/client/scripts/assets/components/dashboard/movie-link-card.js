@@ -15,5 +15,9 @@ export default function MovieLinkCard(props) {
 }
 
 MovieLinkCard.propTypes = {
-    movie: PropTypes.string.isRequired
+    movie: PropTypes.shape({
+        id: PropTypes.string,
+        title: PropTypes.string,
+        url: PropTypes.string
+    }).isRequired
 };

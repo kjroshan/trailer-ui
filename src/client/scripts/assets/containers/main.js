@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import store from '../../store';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/common/header';
+import Footer from '../components/common/footer';
 import TrailerController from '../controllers/trailer-controller';
 import DashboardController from '../controllers/dashboard-controller';
 

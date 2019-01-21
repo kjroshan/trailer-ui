@@ -4,7 +4,7 @@ import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { assert, expect } from 'chai';
 import sinon from 'sinon';
-import Header from '../header';
+import Header from '../common/header';
 
 
 configure({ adapter: new Adapter() });
